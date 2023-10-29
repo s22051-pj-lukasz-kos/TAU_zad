@@ -16,7 +16,11 @@ public class Dto {
     }
 
     public void addMovie(Movie movie) {
-        this.movieList.add(movie);
+        if (movie == null) {
+            throw new NullPointerException();
+        } else {
+            this.movieList.add(movie);
+        }
     }
 
     public boolean removeMovie(Movie movie) {
@@ -25,7 +29,6 @@ public class Dto {
             return true;
         }
         return false;
-
     }
 
     public boolean findMovie(Movie movie) {
@@ -37,8 +40,6 @@ public class Dto {
             int index = this.movieList.indexOf(movie);
             return this.movieList.get(index);
         }
-        return new Movie();
+        return null;
     }
-
-
 }
