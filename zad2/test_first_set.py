@@ -18,6 +18,7 @@ def driver(request):
         driver = webdriver.Firefox()
     else:
         raise ValueError("Unsupported browser")
+    driver.maximize_window()
     driver.get(URL)
     yield driver
     driver.quit()
