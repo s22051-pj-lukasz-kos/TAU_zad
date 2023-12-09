@@ -25,3 +25,9 @@ Program w Java 11. Testy w JUnit5.
 - Dodanie jej do koszyka
 - Kliknięcie przycisku "Przejdź do koszyka"
 - Upewnienie się, że jesteś na odpowiedniej podstronie (/koszyk)
+
+## Laboratorium 3 
+
+Testowanie gry.
+Gra w terminalu w polu 5x5. Pozycja gracza jest losowana w pierwszej kolumnie.  
+Następnie jest losowana pozycja skarbu w ostatniej kolumnie.  
