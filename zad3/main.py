@@ -6,9 +6,9 @@ from game import Game
 
 def get_keypress_linux():
     """Handles keypress in terminal for Linux"""
-    import termios  # pylint: disable=import-error
-    import tty  # pylint: disable=import-error
-    import contextlib  # pylint: disable=import-error
+    import termios  # pylint: disable=import-error,import-outside-toplevel
+    import tty  # pylint: disable=import-error,import-outside-toplevel
+    import contextlib  # pylint: disable=import-error,import-outside-toplevel
 
     @contextlib.contextmanager
     def raw_mode(file):
@@ -28,7 +28,7 @@ def get_keypress_linux():
 
 def get_keypress_windows():
     """Handles keypress in terminal for Windows"""
-    import msvcrt  # pylint: disable=import-error
+    import msvcrt  # pylint: disable=import-error,import-outside-toplevel
     return msvcrt.getch().decode().lower()
 
 
