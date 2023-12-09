@@ -7,6 +7,7 @@ import termios  # pylint: disable=import-error
 import tty  # pylint: disable=import-error
 import contextlib  # pylint: disable=import-error
 
+
 class Game:
     """
     Game in terminal on 5x5 grid. It draws player, treasure and obstacles position.
