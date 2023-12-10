@@ -34,7 +34,7 @@ def get_keypress_windows():
 
 def main():
     """Main function"""
-    game = Game(seed=1)
+    game = Game()
     while True:
         game.print_board()
         if game.check_win():

@@ -29,5 +29,15 @@ Program w Java 11. Testy w JUnit5.
 ## Laboratorium 3 
 
 Testowanie gry.
-Gra w terminalu w polu 5x5. Pozycja gracza jest losowana w pierwszej kolumnie.  
-Następnie jest losowana pozycja skarbu w ostatniej kolumnie.  
+Gra w terminalu w polu 5x5. Pozycja gracza jest losowana w pierwszej kolumnie (o)
+Następnie jest losowana pozycja skarbu w ostatniej kolumnie (T)
+Potem następuje wylosowanie pozycji przeszkód (x). 
+Celem gracza jest dotarcie do miejsca, gdzie znajduje się skarb.  
+Gracz porusza się klawiszami 'w', 's', 'a', 'd'. Wciśnięcie klawisza 'q' wyłącza grę.  
+Gra za każdym uruchomieniem wygląda inaczej.  
+![Game one](./zad3/screenshots/1.png) 
+![Game two](./zad3/screenshots/2.png) 
+![Game three](./zad3/screenshots/3.png)  
+Do samej gry dopisano testy mające na celu sprawdzenie logiki gry.
+Dodatkowo repozytorium spięto z GitHub Actions w celu sprawdzenia kodu i uruchamiania testów. 
+![GitHub Actions](./zad3/screenshots/4.png)

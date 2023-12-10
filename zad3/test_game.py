@@ -8,6 +8,46 @@ def test_initial_position():
     assert game.player_position != game.treasure_position
 
 
+def test_game_identical_when_seed_the_same():
+    """
+    Check if game draws the same player, treasure and obstacles positions
+    when seed is the same
+    """
+    game1 = Game(seed=1)
+    game2 = Game(seed=1)
+
+    assert (game1.player_position == game2.player_position and
+            game1.treasure_position == game2.treasure_position and
+            game1.board == game2.board), "Game is not identical when seed is the same"
+
+
+def test_player_position_is_different_when_seed_is_different():
+    """Check if player position is different when seed is different"""
+    game1 = Game(seed=1)
+    game2 = Game(seed=2)
+
+    assert game1.player_position != game2.player_position, \
+        "Player position is not different when seed is different"
+
+
+def test_treasure_position_is_different_when_seed_is_different():
+    """Check if treasure position is different when seed is different"""
+    game1 = Game(seed=1)
+    game2 = Game(seed=2)
+
+    assert game1.treasure_position != game2.treasure_position, \
+        "Treasure position is not different when seed is different"
+
+
+def test_obstacles_position_is_different_when_seed_is_different():
+    """Check if obstacles positions is different when seed is different"""
+    game1 = Game(seed=1)
+    game2 = Game(seed=2)
+
+    assert game1.board != game2.board, \
+        "Obstacles positions is not different when seed is different"
+
+
 def test_move_up():
     """Check if player could correctly move up"""
     game = Game(seed=1)
