@@ -93,6 +93,7 @@ def test_submit_button(driver):
     )
     submit_button.click()
 
+
     # Verify submission message
     message = WebDriverWait(driver, 10).until(
         ec.visibility_of_element_located((By.ID, message_id))

@@ -41,3 +41,13 @@ Gra za każdym uruchomieniem wygląda inaczej.
 Do samej gry dopisano testy mające na celu sprawdzenie logiki gry.
 Dodatkowo repozytorium spięto z GitHub Actions w celu sprawdzenia kodu i uruchamiania testów. 
 ![GitHub Actions](./zad3/screenshots/4.png)
+
+## Laboratorium 4
+
+Przepisz scenariusze testowe z Laboratorium 2 na Behave (implementacja Cucumber w Python)
+
+Aby uruchomić testy należy zainstalować Behave
+`pip install behave`
+
+Następnie testy uruchamia się wpisując w terminal
+`behave`
